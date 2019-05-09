@@ -163,4 +163,8 @@ public class NIOServer implements Runnable {
         }
 
     }
+
+    public void testModify() {
+        System.out.println("---1---");
+    }
 }
