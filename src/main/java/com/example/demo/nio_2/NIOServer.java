@@ -15,12 +15,12 @@ public class NIOServer implements Runnable {
     private ByteBuffer readBuffer = ByteBuffer.allocate(1024);
 
 
-    public static void main(String[] args) {
-        new Thread(new NIOServer(9999)).start();
-    }
-
     private NIOServer(int port) {
         init(port);
+    }
+
+    public static void main(String[] args) {
+        new Thread(new NIOServer(9999)).start();
     }
 
     private void init(int port) {
@@ -165,6 +165,6 @@ public class NIOServer implements Runnable {
     }
 
     public void testModify() {
-        System.out.println("---2---");
+        System.out.println("---3---");
     }
 }
